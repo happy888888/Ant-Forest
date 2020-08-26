@@ -1,0 +1,44 @@
+{
+  "pageMapping": {
+    "www/message.html": {
+      "resources": [
+        "h5-common.js",
+        "www/message.js"
+      ],
+      "target": "www/message.html",
+      "type": "cube"
+    },
+    "www/history.html": {
+      "resources": [
+        "h5-common.js",
+        "www/history.js"
+      ],
+      "target": "www/history.html",
+      "type": "cube"
+    },
+    "www/listExchange.html": {
+      "resources": [
+        "h5-common.js",
+        "www/listExchange.js"
+      ],
+      "target": "www/listExchange.html",
+      "type": "cube"
+    },
+    "www/exchange.html": {
+      "resources": [
+        "h5-common.js",
+        "www/exchange.js"
+      ],
+      "target": "www/exchange.html",
+      "type": "cube"
+    },
+    "www/listRank.html": {
+      "resources": [
+        "h5-common.js",
+        "www/listRank.js"
+      ],
+      "target": "www/listRank.html",
+      "type": "cube"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <script>
+      window._to = {
+        autoLogPv: false
+      }
+    </script>
+    <script>
+      (function () {
+        function setHTMLFontSize() {
+          var htmlFontSize = (document.documentElement.clientWidth / 750 * 100) + 'px';
+          var bodyFontSize = '16px';
+          var styleText = 'html{font-size:' + htmlFontSize + '!important;}body{font-size:' + bodyFontSize + '!important;}';
+          var styleDom = document.getElementById('remroot');
+          if (styleDom) {
+            styleDom.innerHTML = styleText;
+          } else {
+            styleDom = document.createElement('style');
+            styleDom.id = 'remroot';
+            styleDom.innerHTML = styleText;
+            document.getElementsByTagName('head')[0].appendChild(styleDom);
+          }
+        }
+        if (document.documentElement.clientWidth) {
+          setHTMLFontSize();
+        }
+        window.addEventListener('resize', function () {
+          setHTMLFontSize();
+        });
+        if (!window.Promise) {
+          document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '><' + '/' + 'script>');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../h5-render.css?__build_timestamp__=1597914353471"/>
+    <style>
+        body {
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+<div id="__react-content"></div>
+<script src="../h5-worker.js?__build_timestamp__=1597914353471" ></script>
+<script src="../h5-common.js?__build_timestamp__=1597914353471" ></script>
+<script src="./listRank.js?__build_timestamp__=1597914353471" ></script>
+<script>
+  (function () {
+    function onReady(callback) {
+      if ( navigator.userAgent.indexOf('Alipay') >= 0 && !window.AlipayJSBridge && window.parent === window) {
+        document.addEventListener('AlipayJSBridgeReady', function () {
+          callback();
+        });
+      } else {
+        callback();
+      }
+    }
+    onReady(window.bootstrap);
+  })();
+</script>
+</body>
+</html>

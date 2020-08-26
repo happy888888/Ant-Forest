@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/message/index",
+    "pages/history/index",
+    "pages/listExchange/index",
+    "pages/exchange/index",
+    "pages/listRank/index"
+  ],
+  "window": {
+    "enableDSL": "YES",
+    "enableJSC": "YES",
+    "enableKeepAlive": "NO",
+    "enableWK": "YES",
+    "nboffline": "sync",
+    "tinyPubRes": "YES",
+    "showDomain": "NO",
+    "nbpkgres": [
+      "68687209"
+    ],
+    "cubeRuntimeRequired": "90"
+  },
+  "h5": {
+    "route": {
+      "externalFolder": "cube",
+      "publicFolder": "www",
+      "pageType": {
+        "pages/message/index": "cube:new",
+        "pages/history/index": "cube:new",
+        "pages/listExchange/index": "cube:new",
+        "pages/exchange/index": "cube:new",
+        "pages/listRank/index": "cube:new"
+      }
+    },
+    "pageMapping": {
+      "pages/home/index": "home",
+      "pages/message/index": "message",
+      "pages/exchange/index": "exchange",
+      "pages/listExchange/index": "listExchange",
+      "pages/history/index": "history",
+      "pages/listFeed/index": "listFeed",
+      "pages/achieve/index": "achieve",
+      "pages/dutycert/index": "dutycert",
+      "pages/forestReal/index": "forestReal",
+      "pages/intro2/index": "intro2",
+      "pages/invite/index": "invite",
+      "pages/listForest/index": "listForest",
+      "pages/listRank/index": "listRank",
+      "pages/real/index": "real",
+      "pages/realpic/index": "realpic",
+      "pages/satelliteReal/index": "satelliteReal"
+    },
+    "resourceQuerystring": true
+  }
+}

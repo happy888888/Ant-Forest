@@ -1,0 +1,26 @@
+{
+  "name": "ant-forest",
+  "author": "沐瑜",
+  "version": "0.0.48",
+  "scripts": {
+    "ci": "echo true",
+    "build:kylin": "cd kylin && tnpm run build && cd ../",
+    "build:kylin:update": "cd kylin && tnpm update && tnpm run build && cd ../",
+    "build:cube": "cd cube && tnpm run build && cd ../",
+    "build:cube:update": "cd cube && tnpm update && tnpm run build && cd ../",
+    "build": "./build_and_update.sh",
+    "h5build": "tnpm run build"
+  },
+  "devDependencies": {
+    "@ali/antcube-cli": "^0.16.22",
+    "@ali/ci": "^4.19.0"
+  },
+  "ci": {
+    "type": "aci",
+    "coverage": false
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

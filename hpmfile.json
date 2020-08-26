@@ -1,0 +1,55 @@
+{
+  "appid": "60000002",
+  "name": "antforest",
+  "version": "7.0.1",
+  "description": "蚂蚁森林",
+  "canSearch": "true",
+  "canSysSearch": "true",
+  "launchParams": {
+    "url": "/www/home.html",
+    "defaultTitle": "蚂蚁森林",
+    "nbpkgres": [
+      "63300002",
+      "66666817",
+      "68687209"
+    ],
+    "transparentTitle": "auto",
+    "backgroundColor": "3194732",
+    "canPullDown": "NO",
+    "gestureBack": "YES",
+    "backBehavior": "pop",
+    "enableCubeView": "YES",
+    "cubeRuntimeRequired": "93"
+  },
+  "host": {
+    "enable": true,
+    "dev": "https://60000002.h5app.dev.alipay.com",
+    "test": "https://60000002.h5app.test.alipay.com",
+    "online": "https://60000002.h5app.alipay.com"
+  },
+  "build": {
+    "include": [
+      "**/*",
+      "*"
+    ],
+    "ignore": [
+      "./**/*.md",
+      "./appConfig.json"
+    ]
+  },
+  "support": {
+    "ios": {
+      "minSDK": "0",
+      "maxSDK": "100.0.0",
+      "minOS": "9.6.0",
+      "maxOS": "100.0.0"
+    },
+    "android": {
+      "minSDK": "0",
+      "maxSDK": "100.0.0",
+      "minOS": "9.6.0",
+      "maxOS": "100.0.0"
+    }
+  },
+  "dependencies": {}
+}
